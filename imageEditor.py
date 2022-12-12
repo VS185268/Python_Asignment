@@ -7,7 +7,7 @@ for each in All_imgs:
     # opening each file as the image 
     img=Image.open(f"{fold_new}/{each}")
     # By adjusting this factor we can vary the Contrasting level
-    effecting_Factor=1.5
+    effecting_Factor=0.8
     enhancer=ImageEnhance.Contrast(img)
     edit=enhancer.enhance(effecting_Factor)
     #getting first name of the files which are present in the folder
